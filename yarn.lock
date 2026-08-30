@@ -5013,7 +5013,7 @@ __metadata:
     react: "npm:18.3.1"
     react-beautiful-dnd: "npm:13.1.1"
     react-calendar: "npm:4.8.0"
-    react-colorful: "npm:5.6.1"
+    react-colorful: "npm:5.8.0"
     react-custom-scrollbars-2: "npm:4.5.0"
     react-dom: "npm:18.3.1"
     react-dropzone: "npm:14.2.3"
@@ -27544,7 +27544,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-colorful@npm:5.6.1, react-colorful@npm:^5.1.2":
+"react-colorful@npm:5.8.0":
+  version: 5.8.0
+  resolution: "react-colorful@npm:5.8.0"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 10/baa6e78cd0ebc5bc94f3e4108aa1174c1ce94e839c0ee4fe730db26457ceb7e44392d3362a5b05ca47222fa332d4125d6e0734ff725104f14a3c7b6510a3279b
+  languageName: node
+  linkType: hard
+
+"react-colorful@npm:^5.1.2":
   version: 5.6.1
   resolution: "react-colorful@npm:5.6.1"
   peerDependencies:
