@@ -80,11 +80,13 @@ jobs:
 
       - name: Build Grafana binaries
         shell: bash
+        env:
+          CGO_ENABLED: '0'
         run: |
           set -euo pipefail
           tmpbin="$(mktemp -d)"
           trap 'rm -rf "${tmpbin}"' EXIT
-          go build -o "${tmpbin}/" \
+          go build -ldflags="-s -w" -o "${tmpbin}/" \
             ./pkg/cmd/grafana \
             ./pkg/cmd/grafana-server \
             ./pkg/cmd/grafana-cli

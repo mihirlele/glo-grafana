@@ -9,7 +9,6 @@ on:
       - 'go.work*'
       - 'Containerfile.konflux'
       - '.trivyignore'
-      - '.github/workflows/trivy-scan.yml'
   push:
     branches:
       - main
@@ -20,7 +19,6 @@ on:
       - 'go.work*'
       - 'Containerfile.konflux'
       - '.trivyignore'
-      - '.github/workflows/trivy-scan.yml'
 
 jobs:
   trivy-scan:
